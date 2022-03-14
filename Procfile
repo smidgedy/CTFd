@@ -1,1 +1,1 @@
-web: gunicorn -b :$PORT run:app --workers=3
+web: gunicorn -b :$PORT run:app --workers=$GUNICORN_WORKERS
