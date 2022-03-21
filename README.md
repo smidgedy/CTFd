@@ -23,7 +23,7 @@ You bloody better believe I read some articles from wiser people than me about w
 
 ## What's left to do
 
-- Request verification from Heroku team to use autoscaling perf dynos.
+- Request verification from Heroku team to use autoscaling perf dynos (Requested).
 
 - understand this fork https://gitlab.com/cybears/ctfd/-/tree/master/
 
