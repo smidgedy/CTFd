@@ -16,12 +16,12 @@ instances:
     ## @param host - string - required
     ## Enter the host to connect to.
     #
-  - host: crestfish.redistogo.com
+  - host: "%%env_DD_REDIS_HOST%%"
 
     ## @param port - integer - required
     ## Enter the port of the host to connect to.
     #
-    port: 11032
+    port: "%%env_DD_REDIS_PORT%%"
 
     ## @param unix_socket_path - string - optional
     ## Connect through a unix socket instead of using a `host` and `port`.
@@ -39,12 +39,12 @@ instances:
     ## @param username - string - optional
     ## The username for the connection. Redis 6+ only.
     #
-    username: redistogo
+    username: "%%env_DD_REDIS_USER%%"
 
     ## @param password - string - optional
     ## The password for the connection.
     #
-    password: ***REMOVED***
+    password: "%%env_DD_REDIS_PASSWORD%%"
 
     ## @param collect_client_metrics - boolean - optional - default: false
     ## Collects metrics using the `CLIENT` command.

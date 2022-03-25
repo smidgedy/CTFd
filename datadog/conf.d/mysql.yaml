@@ -44,7 +44,7 @@ instances:
     ## @param port - number - optional - default: 3306
     ## Port to use when connecting to MySQL.
     #
-    port: 3306
+    port: "%%env_DD_MYSQL_PORT%%"
 
     ## @param reported_hostname - string - optional
     ## Set the reported hostname for this instance. This value overrides the hostname detected by the Agent
