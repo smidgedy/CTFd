@@ -44,6 +44,7 @@ elif [ "$1" == "downgrade" ]; then
     heroku addons:downgrade redistogo:nano
     heroku dyno:scale web=1:Free
 elif [ "$1" == "autoscale" ]; then
+    # don't use unless you're verified by heroku for performance cores
     heroku dyno:scale web=$2:Performance-1X
     heroku ps:autoscale:enable --max=$3 --min=$2 --p95=$4
 elif [ "$1" == "ghettoscale" ]; then
