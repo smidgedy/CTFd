@@ -221,14 +221,14 @@ instances:
         ##
         ## See also the MySQL metrics listing: https://docs.datadoghq.com/integrations/mysql/#metrics
         #
-        extra_status_metrics: true
+        extra_status_metrics: false
 
         ## @param extra_innodb_metrics - boolean - optional - default: false
         ## Set to `true` to enable extra InnoDB metrics.
         ##
         ## See also the MySQL metrics listing: https://docs.datadoghq.com/integrations/mysql/#metrics
         #
-        extra_innodb_metrics: true
+        extra_innodb_metrics: false
 
         ## @param disable_innodb_metrics - boolean - optional - default: false
         ## Set to `true` only if experiencing issues with older (unsupported) versions of MySQL
@@ -238,7 +238,7 @@ instances:
         ##
         ## see also the MySQL metrics listing: https://docs.datadoghq.com/integrations/mysql/#metrics
         #
-        disable_innodb_metrics: false
+        disable_innodb_metrics: true
 
         ## @param schema_size_metrics - boolean - optional - default: false
         ## Set to `true` to collect schema size metrics.
@@ -288,12 +288,12 @@ instances:
         ## to have PROCESS and SELECT privileges. Take a look at the
         ## MySQL integration tile in the Datadog Web UI for further instructions.
         #
-        extra_performance_metrics: true
+        extra_performance_metrics: false
 
     ## @param dbm - boolean - optional - default: false
     ## Set to `true` enable Database Monitoring.
     #
-    dbm: true
+    dbm: false
 
     ## Configure collection of query metrics
     #
@@ -302,7 +302,7 @@ instances:
         ## @param enabled - boolean - optional - default: true
         ## Enable collection of query metrics. Requires `dbm: true`.
         #
-        enabled: true
+        enabled: false
 
         ## @param collection_interval - number - optional - default: 10
         ## Set the query metric collection interval (in seconds). Each collection involves a single query to
@@ -318,7 +318,7 @@ instances:
         ## @param enabled - boolean - optional - default: true
         ## Enables collection of query samples. Requires `dbm: true`.
         #
-        enabled: true
+        enabled: false
 
         ## @param collection_interval - number - optional - default: 1
         ## Sets the query sample collection interval (in seconds). Each collection involves a single query to one
